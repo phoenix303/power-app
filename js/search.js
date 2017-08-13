@@ -10,14 +10,20 @@ $(document).ready(function() {
         var dataColumn ="";
 
         for(var i in data) {
-          dataColumn += '<a href="#" class="list-group-item"><div class="media col-md-3"><figure class="pull-left"><img class="media-object img-rounded img-responsive" src="images/2.jpg"> </figure> </div><div class="col-md-6"><h4 class="list-group-item-heading">' + data[i].name + ' </h4><p class="list-group-item-text">'  + data[i].description + '</p></div><div class="col-md-3 text-center"><button type="button" class="btn btn-primary btn-lg btn-block">Enroll Now!</button></div></a>';
+          dataColumn += '<a href="#" class="list-group-item"><div class="media col-md-3"><figure class="pull-left"><img class="media-object img-rounded img-responsive" src="images/2.jpg"> </figure> </div><div class="col-md-6"><h4 class="list-group-item-heading">' + data[i].name + ' </h4><p class="list-group-item-text">'  + data[i].description + '</p></div><div class="col-md-3 text-center"><button type="button" id="enroll" class="btn btn-primary btn-lg btn-block">Enroll Now!</button></div></a>';
 
         }
         $('#eventList').append(dataColumn);
 
+        $('#enroll').on('click', function() {
+          //alert('enroll');
+            location.href = "///home/divya/power-app/login.html#";
+        });
+
       },
       error: function() { alert('Failed!'); },
   });
+
 
 
   $('#search-button').on('click', function() {
@@ -34,7 +40,7 @@ $(document).ready(function() {
           var dataColumn ="";
 
           for(var i in data) {
-            dataColumn += '<a href="#" class="list-group-item"><div class="media col-md-3"><figure class="pull-left"><img class="media-object img-rounded img-responsive" src="images/2.jpg"> </figure> </div><div class="col-md-6"><h4 class="list-group-item-heading">' + data[i].name + ' </h4><p class="list-group-item-text">'  + data[i].description + '</p></div><div class="col-md-3 text-center"><button type="button" class="btn btn-primary btn-lg btn-block">Enroll Now!</button></div></a>';
+            dataColumn += '<a href="#" class="list-group-item"><div class="media col-md-3"><figure class="pull-left"><img class="media-object img-rounded img-responsive" src="images/2.jpg"> </figure> </div><div class="col-md-6"><h4 class="list-group-item-heading">' + data[i].name + ' </h4><p class="list-group-item-text">'  + data[i].description + '</p></div><div class="col-md-3 text-center"><a href="aboutUs.html"><button type="button" class="btn btn-primary btn-lg btn-block">Enroll Now!</button></a></div></a>';
           }
           $('#eventList').html(dataColumn);
 
@@ -62,7 +68,5 @@ $(document).ready(function() {
       $('.table tr').css('display', 'none').fadeIn('slow');
     }
   });
-
-
 
 } );
