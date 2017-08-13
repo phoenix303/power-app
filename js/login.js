@@ -24,17 +24,33 @@ $(document).ready(function() {
         crossDomain: true,
         dataType: 'json',
         success: function(data) {
-         alert(JSON.stringify(data));
-
-         
-          $('#login-message').html('<span>Login successful!</span>');
+      //   alert(JSON.stringify(data));
+        $('.panel-body').html('<span>Login successful!</span>');
+        location.href = "///home/divya/power-app/login1.html#username=" + username;
         },
         error: function() { $('#login-message').html('<span>The username ans password do not match. Please try again.</span>') },
     });
+    event.preventDefault();
+  });
 
 
-
-
+  $( "#register-submit" ).click(function( event ) {
+    var username = $('#username').val();
+    var password = $('#password').val();
+    var name = $('#name').val();
+    $.ajax({
+        url: 'http://localhost:5000/user' ,
+        method: 'POST',
+        crossDomain: true,
+        data: { username: username, password: password, fullname: name, role: "volunteer" },
+        dataType: "json",
+        success: function() {
+      //   alert(JSON.stringify(data));
+        $('.panel-body').html('<span>You have been registered successfully!</span>');
+        location.href = "///home/divya/power-app/login1.html#username=" + username;
+        },
+        error: function() { $('#register-message').html('<span>We are unable to register you at this moment. Please try again later.</span>') },
+    });
     event.preventDefault();
   });
 
