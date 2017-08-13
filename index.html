@@ -23,7 +23,7 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title">h1.title</h1>
+                <h1 class="title">Power Hour</h1>
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -35,38 +35,187 @@
         </div>
 
         <div class="main-container">
-            <div class="main wrapper clearfix">
 
-                <article>
-                    <header>
-                        <h1>article header h1</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-                    </header>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-                    </section>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-                    </section>
-                    <footer>
-                        <h3>article footer h3</h3>
-                        <p>Lorem ipsum d  olor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
-                    </footer>
-                </article>
 
-                <aside>
-                    <h3>aside</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-                </aside>
+          <div class="row">
 
-            </div> <!-- #main -->
+        		<section class="content" id="search-content">
+        			<h1>Events to enroll</h1>
+        			<div class="col-md-8 col-md-offset-2">
+        				<div class="panel panel-default">
+        					<div class="panel-body">
+        						<div class="pull-right">
+        							<div class="btn-group">
+        								<button type="button" class="btn btn-success btn-filter" data-target="Enroll"></button>
+        								<button type="button" class="btn btn-default btn-filter" data-target="all">Todos</button>
+        							</div>
+        						</div>
+        						<div class="table-container" >
+        							<table class="table table-filter">
+        								<tbody>
+        									<tr data-status="pagado">
+        										<td>
+        											<div class="ckbox">
+        												<input type="checkbox" id="checkbox1">
+        												<label for="checkbox1"></label>
+        											</div>
+        										</td>
+        										<td>
+        											<a href="javascript:;" class="star">
+        												<i class="glyphicon glyphicon-star"></i>
+        											</a>
+        										</td>
+        										<td>
+        											<div class="media">
+        												<a href="#" class="pull-left">
+        													<img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+        												</a>
+        												<div class="media-body">
+        													<span class="media-meta pull-right">Febrero 13, 2016</span>
+        													<h4 class="title">
+        														Lorem Impsum
+        														<span class="pull-right pagado">(Pagado)</span>
+        													</h4>
+        													<p class="summary">Ut enim ad minim veniam, quis nostrud exercitation...</p>
+        												</div>
+        											</div>
+        										</td>
+        									</tr>
+        									<tr data-status="pendiente">
+        										<td>
+        											<div class="ckbox">
+        												<input type="checkbox" id="checkbox3">
+        												<label for="checkbox3"></label>
+        											</div>
+        										</td>
+        										<td>
+        											<a href="javascript:;" class="star">
+        												<i class="glyphicon glyphicon-star"></i>
+        											</a>
+        										</td>
+        										<td>
+        											<div class="media">
+        												<a href="#" class="pull-left">
+        													<img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+        												</a>
+        												<div class="media-body">
+        													<span class="media-meta pull-right">Febrero 13, 2016</span>
+        													<h4 class="title">
+        														Lorem Impsum
+        														<span class="pull-right pendiente">(Pendiente)</span>
+        													</h4>
+        													<p class="summary">Ut enim ad minim veniam, quis nostrud exercitation...</p>
+        												</div>
+        											</div>
+        										</td>
+        									</tr>
+        									<tr data-status="cancelado">
+        										<td>
+        											<div class="ckbox">
+        												<input type="checkbox" id="checkbox2">
+        												<label for="checkbox2"></label>
+        											</div>
+        										</td>
+        										<td>
+        											<a href="javascript:;" class="star">
+        												<i class="glyphicon glyphicon-star"></i>
+        											</a>
+        										</td>
+        										<td>
+        											<div class="media">
+        												<a href="#" class="pull-left">
+        													<img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+        												</a>
+        												<div class="media-body">
+        													<span class="media-meta pull-right">Febrero 13, 2016</span>
+        													<h4 class="title">
+        														Lorem Impsum
+        														<span class="pull-right cancelado">(Cancelado)</span>
+        													</h4>
+        													<p class="summary">Ut enim ad minim veniam, quis nostrud exercitation...</p>
+        												</div>
+        											</div>
+        										</td>
+        									</tr>
+        									<tr data-status="pagado" class="selected">
+        										<td>
+        											<div class="ckbox">
+        												<input type="checkbox" id="checkbox4" checked>
+        												<label for="checkbox4"></label>
+        											</div>
+        										</td>
+        										<td>
+        											<a href="javascript:;" class="star star-checked">
+        												<i class="glyphicon glyphicon-star"></i>
+        											</a>
+        										</td>
+        										<td>
+        											<div class="media">
+        												<a href="#" class="pull-left">
+        													<img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+        												</a>
+        												<div class="media-body">
+        													<span class="media-meta pull-right">Febrero 13, 2016</span>
+        													<h4 class="title">
+        														Lorem Impsum
+        														<span class="pull-right pagado">(Pagado)</span>
+        													</h4>
+        													<p class="summary">Ut enim ad minim veniam, quis nostrud exercitation...</p>
+        												</div>
+        											</div>
+        										</td>
+        									</tr>
+        									<tr data-status="pendiente">
+        										<td>
+        											<div class="ckbox">
+        												<input type="checkbox" id="checkbox5">
+        												<label for="checkbox5"></label>
+        											</div>
+        										</td>
+        										<td>
+        											<a href="javascript:;" class="star">
+        												<i class="glyphicon glyphicon-star"></i>
+        											</a>
+        										</td>
+        										<td>
+        											<div class="media">
+        												<a href="#" class="pull-left">
+        													<img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+        												</a>
+        												<div class="media-body">
+        													<span class="media-meta pull-right">Febrero 13, 2016</span>
+        													<h4 class="title">
+        														Lorem Impsum
+        														<span class="pull-right pendiente">(Pendiente)</span>
+        													</h4>
+        													<p class="summary">Ut enim ad minim veniam, quis nostrud exercitation...</p>
+        												</div>
+        											</div>
+        										</td>
+        									</tr>
+        								</tbody>
+        							</table>
+        						</div>
+        					</div>
+        				</div>
+        				<div class="content-footer">
+        					<p>
+        						Page © - 2016 <br>
+        						Powered By <a href="https://www.facebook.com/tavo.qiqe.lucero" target="_blank">TavoQiqe</a>
+        					</p>
+        				</div>
+        			</div>
+        		</section>
+
+        	</div>
+
+
+          <!-- #main -->
         </div> <!-- #main-container -->
 
         <div class="footer-container">
             <footer class="wrapper">
-                <h3>footer</h3>
+                <h3>Contact Us: admin@powerhour.com</h3>
             </footer>
         </div>
 
